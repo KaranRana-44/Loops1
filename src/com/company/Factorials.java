@@ -22,9 +22,19 @@ public class Factorials {
         }
         return e;
     }
-//    public static double calcEX(int n){
-//
-//    }
+    public static double calcEX(int n){
+        double e =1.0;
+        double olde = 0.0;
+        int fraction = 1;
+        int power= 1;
+        while (e-olde>0.001){
+            olde=e;
+            e+=Math.pow(1.0,power)/calcFactorial(fraction);
+            fraction ++;
+            power++;
+        }
+        return e;
+    }
 
 
     public static void main(String[]args){
@@ -32,6 +42,8 @@ public class Factorials {
             System.out.println(calcFactorial(i));
         }
         System.out.println(calcE());
+        System.out.println(calcEX(7));
+        System.out.println(calcEX(8));
 
 
 
