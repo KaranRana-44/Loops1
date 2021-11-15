@@ -30,15 +30,19 @@ public class Main {
         }
         return yrCount;
     }
-    public static int printSum(int n){
+    public static void printSum(int n){
         int counter=0;
         int sum=0;
+
         while (n>=counter){
             sum+=counter;
             counter++;
-
+            System.out.print(counter);
+            if (n>=counter){
+                System.out.print("+");
+            }
         }
-        return sum;
+        System.out.println("="+sum);
     }
 
     public static boolean isPerfectSquare(int n){
@@ -58,16 +62,24 @@ public class Main {
         System.out.println(addOdds(17));
         System.out.println(addOdds(23));
 
+        System.out.println();
+
         System.out.println(sumDigits(234));
         System.out.println(sumDigits(567));
         System.out.println(sumDigits(892));
 
+        System.out.println();
+
         System.out.println(howManyYears(111.2, 120));
         System.out.println(howManyYears(111.2,150));
 
-        System.out.println(printSum(6));
-        System.out.println(printSum(8));
-        System.out.println(printSum(10));
+        System.out.println();
+
+        printSum(6);
+        printSum(8);
+        printSum(10);
+
+        System.out.println();
 
         System.out.println(isPerfectSquare(9));
         System.out.println(isPerfectSquare(16));
