@@ -29,7 +29,7 @@ public class Factorials {
         int power= 1;
         while (e-olde>0.001){
             olde=e;
-            e+=Math.pow(1.0,power)/calcFactorial(fraction);
+            e+=Math.pow(n,power)/calcFactorial(fraction);
             fraction ++;
             power++;
         }
@@ -42,8 +42,10 @@ public class Factorials {
             System.out.println(calcFactorial(i));
         }
         System.out.println(calcE());
-        System.out.println(calcEX(7));
-        System.out.println(calcEX(8));
+        for(int i=0; i<=5; i++){
+            double e=calcEX(i);
+            System.out.println("e is %2.3f \n",e);
+        }
 
 
 
