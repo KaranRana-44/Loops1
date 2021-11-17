@@ -41,10 +41,13 @@ public class Factorials {
         for(int i = 1; i<=20; i++){
             System.out.println(calcFactorial(i));
         }
+        System.out.println();
         System.out.println(calcE());
+        System.out.println();
+
         for(int i=1; i<=5; i++){
             double e=calcEX(i);
-            System.out.printf("e is %2.3f \n",e);
+            System.out.printf("e^%d is %2.3f \n",i,e);
         }
 
 
