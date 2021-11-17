@@ -47,7 +47,6 @@ public class Main {
 
     public static boolean isPerfectSquare(int n){
         int count=1;
-
         int sum=0;
         while(addOdds(count)<=n){
             count+=2;

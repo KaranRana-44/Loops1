@@ -42,9 +42,9 @@ public class Factorials {
             System.out.println(calcFactorial(i));
         }
         System.out.println(calcE());
-        for(int i=0; i<=5; i++){
+        for(int i=1; i<=5; i++){
             double e=calcEX(i);
-            System.out.println("e is %2.3f \n",e);
+            System.out.printf("e is %2.3f \n",e);
         }
 
 
